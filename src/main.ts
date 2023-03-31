@@ -1,4 +1,5 @@
-// import "./style.css";
-// import * as THREE from "three";
+import { Main } from "./docs/creating-a-scene";
+import { isWebGLAvailable } from "./docs/webGL-compatibility-check";
+import "./style.css";
 
-console.log("HEL");
+isWebGLAvailable ? new Main() : alert("WebGL is not supported !");
